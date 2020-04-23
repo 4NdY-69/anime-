@@ -1,0 +1,30 @@
+#TopNav{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding-right: 50px;
+  background-color: #202020;
+  z-index: 1;
+  button, span{
+    background-color: inherit;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    line-height:16px;
+    height: 50px;
+    font-family: 'Changa', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      background-color: #181818;
+    }
+  }
+}

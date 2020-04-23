@@ -1,0 +1,71 @@
+#wrapper {
+  z-index: 2;
+  width:50px;
+  height: 50px;
+	background:#202020;
+	display:inline-block;
+	position: relative;
+	cursor:pointer;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  
+  .circle {
+    width:30px;
+    height:30px;
+    position:relative;
+  }
+  .line {
+    position: absolute;
+    height: 5px;
+    width:100%;
+    background:white;
+    border-radius:8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+  }
+  .top {
+      top:18%;
+  }
+  .middle {
+      top:48%;
+  }
+  .bottom {
+      top:78%;
+  }
+  .line {
+    position: absolute;
+    height: 5px;
+    width:100%;
+    background:white;
+    border-radius:8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+  }
+  .top {
+    top:18%;
+  }
+  .middle {
+    top:48%;
+  }
+  .bottom {
+    top:78%;
+  }
+  .icon.close .top {
+    transform:rotate(45deg);
+    top:48%;
+  }
+  .icon.close .middle, .icon.close .bottom {
+    transform:rotate(-45deg);
+    top:48%;
+  }
+}
+
+#SideNav{
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  right: 0;
+  display: block;
+  overflow: hidden;
+  background-color: #202020;
+  transition: width .3s ease-in;
+}
